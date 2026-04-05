@@ -13,7 +13,7 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: auto 350px auto; 
+    grid-template-columns: auto 350px auto;
     margin-top: 150px;
 }
 
