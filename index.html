@@ -8,24 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <main>
-     <section class="container">
-         <article class="input">
-             <h1>Minhas Tarefas</h1>
-             <input type="text" name="text" id="itext" placeholder="digite uma nova tarefa..."> <button>adicionar</button>
-         </article>
-         
-         <article class="info">
-            <div class="geral">Todas</div>
-            <div class="off">Pendentes</div>
-            <div>Concluidas</div>
-         </article>
-         <article class="list">
-            <div>Estudar CSS <i class="fa-solid fa-x"></i></div>
-            <div> <del>Criar layout</del><i class="fa-solid fa-x"></i></div>
-         </article>
-         <footer>2 tarefas | 1 Concluida</footer>
-     </section>
-   </main>
+    <div id="container">
+        <header>
+            <h1>Minhas Tarefas</h1>
+            <input type="text" name="text" id="itext" placeholder="digite uma nova tarefa...">
+            <button>Adicionar</button>
+        </header>
+
+        <section class="task-list">
+            <div>Todas</div>
+            <div>Pendentes</div>
+            <div>Concluídas</div>
+        </section>
+
+        <section>
+            <label class="list">
+                <span><input type="checkbox" name="chek" id="ichek">Estudar CSS</span>
+                <span><i class="fa-solid fa-x"></i></span>
+            </label>
+
+            <label class="list">
+                <span><input type="checkbox" name="chek" id="ichek">Criar Layout</span>
+                <span><i class="fa-solid fa-x"></i></span>
+            </label>
+        </section>
+
+        <footer>2 Tarefas | 0 Concluída</footer>
+    </div>
 </body>
 </html>

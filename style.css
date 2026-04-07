@@ -1,122 +1,104 @@
 @charset "UTF-8";
 
 *{
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
+    box-sizing: border-box;
+
 }
 
 body{
-    background-color:whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main{
     display: grid;
-    grid-template-columns: auto 350px auto;
-    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: auto 400px auto;
+    background-color: whitesmoke;
 }
 
+div#container{
+    grid-column: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.586);
+}
 
 h1{
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.658);
-    color: black;
     text-align: center;
-    padding: 10px;
+    text-shadow: 1px 1px 1px black;
 }
 
-section.container{
-    grid-column: 2;
-    border-radius: 5px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.389);
-}
-
-section{
-    background-color: white;
-    text-align: center;
-    padding: 10px;   
-}
-
-input,button{
-    border-radius: 5px;
-    padding: 10px;
+header>input{
+    background-color: whitesmoke;
+    border: none;
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-input{
-    width: 245px;
-}
-
-button{
-    background-color: rgb(2, 203, 2);
+header> button{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    width: 80px;
+    background-color: rgb(54, 183, 54);
     color: white;
-    transition: background-color 0.5s ;
+    cursor: pointer;
+    transition: background-color 0.5s, width 1s;
 }
 
-button:hover{
-    background-color: green;
+header>button:hover{
+    background-color: rgb(1, 159, 1);
+    width: 83px;
 }
 
-article.info{
+section.task-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-content: space-evenly;
 }
 
-.info>div{
-    background-color: rgb(219, 218, 218);
-    border-radius: 7px;
-    padding: 5px;
-    font-size: 0.9em;
-    width: 120px;
-    cursor: pointer;
-    transition: background-color 0.5s, color 0.5s ;
-}
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 0.9em;
-}
-
-.info>div:hover{
-    background-color: rgba(1, 183, 1, 0.804);
-    color: whitesmoke;
-}
-
-div.geral:hover{
-    background-color: rgb(175, 175, 175);
-}
-
-div.off:hover{
-    background-color: rgba(139, 0, 0, 0.726);
-}
-
-.list>div{
-    background-color:whitesmoke;
-    display:flex;
-    justify-content: space-between;
-    text-align: left;
-    padding: 3px;
+section.task-list>div{
+    background-color: whitesmoke;
     border-radius: 10px;
-    margin-bottom: 2px;
-    
+    height: 30px;
+    width: 130px;
+    text-align: center;
+    margin-top: 10px;
+    align-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-del{
-    color:  rgb(169, 169, 169);
+section.task-list>div:hover{
+    background-color:  rgb(54, 183, 54);
+    color: white;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.list>span>input{
+    cursor: pointer;
+}
+
+i{
+    color: darkgray;
 }
 
 i:hover{
-    color: red;
     cursor: pointer;
+    color: red;
 }
 
 footer{
     color: darkgray;
+    padding: 10px;
+    text-align: center;
     font-size: 0.8em;
-    padding-top: 10px;
 }
-
-
