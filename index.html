@@ -16,22 +16,28 @@
         </header>
 
         <section class="task-list">
-            <div>Todas</div>
-            <div>Pendentes</div>
-            <div>Concluídas</div>
+            <button>Todas</button>
+            <button>Pendentes</button>
+            <button>Concluídas</button>
         </section>
 
-        <section>
-            <label class="list">
-                <span><input type="checkbox" name="chek" id="ichek">Estudar CSS</span>
-                <span><i class="fa-solid fa-x"></i></span>
-            </label>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" name="chek" id="ichek">
+                    <span>Estudar CSS</span>
+                </label>
+                <button class="delet">✕</button>
+            </li>
 
-            <label class="list">
-                <span><input type="checkbox" name="chek" id="ichek">Criar Layout</span>
-                <span><i class="fa-solid fa-x"></i></span>
-            </label>
-        </section>
+            <li>
+                 <label>
+                    <input type="checkbox" name="chek" id="ichek">
+                    <span>Criar Layout</span>
+                </label>
+                <button class="delet">✕</button>
+            </li>
+        </ul>
 
         <footer>2 Tarefas | 0 Concluída</footer>
     </div>
