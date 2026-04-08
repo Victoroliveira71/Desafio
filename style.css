@@ -24,6 +24,7 @@ div#container{
 
 h1{
     text-align: center;
+    padding: 5px;
     text-shadow: 1px 1px 1px black;
 }
 
